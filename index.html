@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King Of Nifty - Telegram Channel</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b111e;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 12px;
+    }
+
+    /* Main Card Container */
+    .card {
+      background-color: #151f30;
+      border: 1px solid #1e2d42;
+      border-radius: 28px;
+      max-width: 440px;
+      width: 100%;
+      padding: 35px 22px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Logo Styling */
+    .logo-container {
+      margin-bottom: 18px;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ffffff;
+      padding: 3px;
+      border: 3px solid #ffcc00;
+    }
+
+    /* Headings */
+    .title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #f5b300;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .sub-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #e2e8f0;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 13.5px;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    /* CTA Button */
+    .btn-telegram {
+      display: block;
+      width: 100%;
+      background-color: #00c853;
+      color: #000000;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 16px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 15px rgba(0, 200, 83, 0.35);
+      animation: pulse 2s infinite;
+    }
+
+    .btn-telegram:hover {
+      background-color: #00e676;
+      transform: scale(1.02);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+    /* Highlight Banner Box */
+    .highlight-box {
+      background-color: #0e2a32;
+      border: 1px solid #14444a;
+      border-radius: 12px;
+      padding: 14px;
+      margin: 18px 0 22px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Features */
+    .features-list {
+      text-align: left;
+      margin: 0 auto 24px 10px;
+      list-style: none;
+    }
+
+    .features-list li {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features-list li span {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    /* Meta Info */
+    .timer-text {
+      color: #ffcc00;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    .meta-info {
+      font-size: 12.5px;
+      color: #cbd5e1;
+      margin-bottom: 22px;
+    }
+
+    /* Ad Compliance Disclaimer Section */
+    .policy-box {
+      border-top: 1px solid #1e293b;
+      margin-top: 20px;
+      padding-top: 16px;
+      text-align: left;
+    }
+
+    .policy-text {
+      font-size: 10.5px;
+      line-height: 1.5;
+      color: #8392a5;
+      margin-bottom: 10px;
+    }
+
+    .meta-disclaimer {
+      font-size: 9.5px;
+      line-height: 1.4;
+      color: #596779;
+      margin-top: 10px;
+      border-top: 1px dashed #1e293b;
+      padding-top: 8px;
+      text-align: center;
+    }
+
+    .footer-links {
+      text-align: center;
+      margin: 12px 0;
+      font-size: 11px;
+    }
+
+    .footer-links a {
+      color: #64748b;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .powered-by {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .powered-by a {
+      color: #00b0ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1975384069793908');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1975384069793908&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<body>
+
+  <div class="card">
+    <!-- Logo Image -->
+    <div class="logo-container">
+      <img src="https://i.ibb.co/5hRgHq9W/Screenshot-20260913-220858.jpg" alt="King Of Nifty Logo" class="logo" />
+    </div>
+
+    <!-- Title & Headings -->
+    <h1 class="title">King Of Nifty</h1>
+    <h2 class="sub-title">NIFTY • BANKNIFTY • OPTIONS</h2>
+    <p class="description">Daily Intraday Trading Signals & Analysis</p>
+
+    <!-- Top Button -->
+    <a href="https://telegram.me/+fXUbEU-3Xio0NzAx" target="_blank" class="btn-telegram">
+      JOIN NOW FOR FREE TELEGRAM
+    </a>
+
+    <!-- Highlighted Box -->
+    <div class="highlight-box">
+      <div>✔ Trusted by 5,000+ Traders</div>
+      <div>✔ Daily Consistent Setups</div>
+    </div>
+
+    <!-- Feature Points -->
+    <ul class="features-list">
+      <li><span>✔</span> 5–7 High Probability Trades</li>
+      <li><span>✔</span> Exact Entry, SL & Target</li>
+      <li><span>✔</span> Beginner Friendly Guidance</li>
+      <li><span>✔</span> Live Market Updates</li>
+    </ul>
+
+    <!-- Bottom Button -->
+    <a href="https://telegram.me/+fXUbEU-3Xio0NzAx" target="_blank" class="btn-telegram">
+      JOIN NOW FOR FREE TELEGRAM
+    </a>
+
+    <!-- Urgency/Meta info -->
+    <div class="timer-text">⏳ Free Access Closing Soon</div>
+    <div class="meta-info">📈 Limited Seats • Active Community</div>
+
+    <!-- Mandatory Ad Policy & SEBI Disclaimers -->
+    <div class="policy-box">
+      <p class="policy-text">
+        <strong>Disclaimer:</strong> <strong></strong>. All information, chart analysis, and market updates shared on this channel are strictly for <strong>educational and informational purposes only</strong>. We do not provide financial advisory services or guaranteed profit schemes.
+      </p>
+      <p class="policy-text">
+        <strong>Risk Warning:</strong> Trading in Equities, F&O (Options/Futures) involves substantial financial risk and can result in the loss of your invested capital. Please consult a SEBI registered financial advisor before making any real-money trades.
+      </p>
+
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> • 
+        <a href="#">Terms & Conditions</a> • 
+        <a href="#">Disclaimer</a>
+      </div>
+
+      <p class="meta-disclaimer">
+        This site is not a part of the Facebook™ website or Meta Platforms, Inc. Additionally, this site is NOT endorsed by Meta in any way. FACEBOOK™ is a trademark of META PLATFORMS, Inc.
+      </p>
+    </div>
+
+    <!-- Footer Credit -->
+    <div class="powered-by">
+      Powered by <a href="#">@Adswithmetas Agency</a>
+    </div>
+  </div>
+
+</body>
+</html>
