@@ -1,214 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>King Of Nifty - Telegram Channel</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0b111e;
-      color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px 12px;
-    }
-
-    /* Main Card Container */
-    .card {
-      background-color: #151f30;
-      border: 1px solid #1e2d42;
-      border-radius: 28px;
-      max-width: 440px;
-      width: 100%;
-      padding: 35px 22px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Logo Styling */
-    .logo-container {
-      margin-bottom: 18px;
-    }
-
-    .logo {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #ffffff;
-      padding: 3px;
-      border: 3px solid #ffcc00;
-    }
-
-    /* Headings */
-    .title {
-      font-size: 26px;
-      font-weight: 800;
-      color: #f5b300;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
-
-    .sub-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: #e2e8f0;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-
-    .description {
-      font-size: 13.5px;
-      color: #94a3b8;
-      margin-bottom: 24px;
-    }
-
-    /* CTA Button */
-    .btn-telegram {
-      display: block;
-      width: 100%;
-      background-color: #00c853;
-      color: #000000;
-      font-weight: 800;
-      font-size: 15px;
-      padding: 16px 10px;
-      border-radius: 12px;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      transition: transform 0.2s, background-color 0.2s;
-      box-shadow: 0 4px 15px rgba(0, 200, 83, 0.35);
-      animation: pulse 2s infinite;
-    }
-
-    .btn-telegram:hover {
-      background-color: #00e676;
-      transform: scale(1.02);
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.02); }
-      100% { transform: scale(1); }
-    }
-
-    /* Highlight Banner Box */
-    .highlight-box {
-      background-color: #0e2a32;
-      border: 1px solid #14444a;
-      border-radius: 12px;
-      padding: 14px;
-      margin: 18px 0 22px 0;
-      font-size: 14px;
-      font-weight: 600;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    /* Features */
-    .features-list {
-      text-align: left;
-      margin: 0 auto 24px 10px;
-      list-style: none;
-    }
-
-    .features-list li {
-      font-size: 15px;
-      font-weight: 600;
-      color: #f1f5f9;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-    }
-
-    .features-list li span {
-      margin-right: 10px;
-      font-weight: bold;
-    }
-
-    /* Meta Info */
-    .timer-text {
-      color: #ffcc00;
-      font-size: 14px;
-      font-weight: 600;
-      margin-top: 18px;
-      margin-bottom: 8px;
-    }
-
-    .meta-info {
-      font-size: 12.5px;
-      color: #cbd5e1;
-      margin-bottom: 22px;
-    }
-
-    /* Ad Compliance Disclaimer Section */
-    .policy-box {
-      border-top: 1px solid #1e293b;
-      margin-top: 20px;
-      padding-top: 16px;
-      text-align: left;
-    }
-
-    .policy-text {
-      font-size: 10.5px;
-      line-height: 1.5;
-      color: #8392a5;
-      margin-bottom: 10px;
-    }
-
-    .meta-disclaimer {
-      font-size: 9.5px;
-      line-height: 1.4;
-      color: #596779;
-      margin-top: 10px;
-      border-top: 1px dashed #1e293b;
-      padding-top: 8px;
-      text-align: center;
-    }
-
-    .footer-links {
-      text-align: center;
-      margin: 12px 0;
-      font-size: 11px;
-    }
-
-    .footer-links a {
-      color: #64748b;
-      text-decoration: none;
-      margin: 0 6px;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    .powered-by {
-      font-size: 11px;
-      color: #64748b;
-      margin-top: 10px;
-      text-align: center;
-    }
-
-    .powered-by a {
-      color: #00b0ff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Wadhwa Official - Premium Trading & Market Calls</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: radial-gradient(circle at center, #1e293b, #0f172a);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            max-width: 460px;
+            width: 100%;
+            border-radius: 24px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #0ea5e9;
+            object-fit: cover;
+            box-shadow: 0 0 25px rgba(14, 165, 233, 0.4);
+        }
+        .verified-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: #0ea5e9;
+            color: white;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            border: 2px solid #0f172a;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+        .subscribers {
+            background: rgba(14, 165, 233, 0.15);
+            color: #38bdf8;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 22px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+        .features-box {
+            text-align: left;
+            background: rgba(15, 23, 42, 0.5);
+            padding: 18px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .features-box h3 {
+            font-size: 15px;
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+        .features-box ul {
+            list-style: none;
+        }
+        .features-box ul li {
+            font-size: 13.5px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .features-box ul li::before {
+            content: "✓";
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .btn-join {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #0284c7, #0369a1);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.4);
+            letter-spacing: 0.5px;
+        }
+        .btn-join:hover {
+            background: linear-gradient(135deg, #0369a1, #075985);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(2, 132, 199, 0.6);
+        }
+        .disclaimer {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
   <!-- Meta Pixel Code -->
 <script>
@@ -226,73 +150,39 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1975384069793908&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+<!-- End Meta Pixel Code --> 
 <body>
 
-  <div class="card">
-    <!-- Logo Image -->
-    <div class="logo-container">
-      <img src="https://i.ibb.co/5hRgHq9W/Screenshot-20260913-220858.jpg" alt="King Of Nifty Logo" class="logo" />
+    <div class="container">
+        <!-- Logo with Verified Badge -->
+        <div class="profile-container">
+            <img src="https://i.ibb.co/5hb20cT0/Screenshot-20260922-231733.jpg" alt="Deepak Wadhwa Official Logo" class="profile-img">
+            <div class="verified-badge">✓</div>
+        </div>
+        
+        <h1>DEEPAK WADHWA OFFICIAL™</h1>
+       
+        
+        <!-- Professional & Clean Value Proposition -->
+        <div class="features-box">
+            <h3>What You Get Inside:</h3>
+            <ul>
+                <li>High-Accuracy Crypto & Forex Analysis</li>
+                <li>Stock Market Educational Setups & Learning</li>
+                <li>Real-time Market Updates & Strategy Support</li>
+                <li>100% Free Community for Learning Purposes</li>
+            </ul>
+        </div>
+
+        <!-- Call to Action Button -->
+        <a href="https://t.me/+IUVI3PWuJmY1MTA5" target="_blank" class="btn-join">
+            🚀 JOIN TELEGRAM CHANNEL
+        </a>
+
+        <p class="disclaimer">
+            <strong>Disclaimer:</strong> All market updates and calls shared here are strictly for educational and learning purposes. We are not SEBI registered. Please trade at your own risk.
+        </p>
     </div>
-
-    <!-- Title & Headings -->
-    <h1 class="title">King Of Nifty</h1>
-    <h2 class="sub-title">NIFTY • BANKNIFTY • OPTIONS</h2>
-    <p class="description">Daily Intraday Trading Signals & Analysis</p>
-
-    <!-- Top Button -->
-    <a href="https://telegram.me/+fXUbEU-3Xio0NzAx" target="_blank" class="btn-telegram">
-      JOIN NOW FOR FREE TELEGRAM
-    </a>
-
-    <!-- Highlighted Box -->
-    <div class="highlight-box">
-      <div>✔ Trusted by 5,000+ Traders</div>
-      <div>✔ Daily Consistent Setups</div>
-    </div>
-
-    <!-- Feature Points -->
-    <ul class="features-list">
-      <li><span>✔</span> 5–7 High Probability Trades</li>
-      <li><span>✔</span> Exact Entry, SL & Target</li>
-      <li><span>✔</span> Beginner Friendly Guidance</li>
-      <li><span>✔</span> Live Market Updates</li>
-    </ul>
-
-    <!-- Bottom Button -->
-    <a href="https://telegram.me/+fXUbEU-3Xio0NzAx" target="_blank" class="btn-telegram">
-      JOIN NOW FOR FREE TELEGRAM
-    </a>
-
-    <!-- Urgency/Meta info -->
-    <div class="timer-text">⏳ Free Access Closing Soon</div>
-    <div class="meta-info">📈 Limited Seats • Active Community</div>
-
-    <!-- Mandatory Ad Policy & SEBI Disclaimers -->
-    <div class="policy-box">
-      <p class="policy-text">
-        <strong>Disclaimer:</strong> <strong></strong>. All information, chart analysis, and market updates shared on this channel are strictly for <strong>educational and informational purposes only</strong>. We do not provide financial advisory services or guaranteed profit schemes.
-      </p>
-      <p class="policy-text">
-        <strong>Risk Warning:</strong> Trading in Equities, F&O (Options/Futures) involves substantial financial risk and can result in the loss of your invested capital. Please consult a SEBI registered financial advisor before making any real-money trades.
-      </p>
-
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a> • 
-        <a href="#">Terms & Conditions</a> • 
-        <a href="#">Disclaimer</a>
-      </div>
-
-      <p class="meta-disclaimer">
-        This site is not a part of the Facebook™ website or Meta Platforms, Inc. Additionally, this site is NOT endorsed by Meta in any way. FACEBOOK™ is a trademark of META PLATFORMS, Inc.
-      </p>
-    </div>
-
-    <!-- Footer Credit -->
-    <div class="powered-by">
-      Powered by <a href="#">@Adswithmetas Agency</a>
-    </div>
-  </div>
 
 </body>
 </html>
