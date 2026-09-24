@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak Wadhwa Official - Premium Trading & Market Calls</title>
+    <title>Trading Signals & Analysis</title>
     <style>
         * {
             margin: 0;
@@ -11,130 +11,137 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
-            background: radial-gradient(circle at center, #1e293b, #0f172a);
+            background-color: #0b132b;
             color: #ffffff;
-            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
             padding: 20px;
         }
+
         .container {
-            background: rgba(30, 41, 59, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            max-width: 460px;
             width: 100%;
-            border-radius: 24px;
-            padding: 35px 25px;
+            max-width: 420px;
+            background-color: #1c2541;
+            border-radius: 20px;
+            padding: 30px 20px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #3a506b;
         }
-        .profile-container {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        .profile-img {
-            width: 130px;
-            height: 130px;
+
+        .profile-img-container {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 15px auto;
             border-radius: 50%;
-            border: 4px solid #0ea5e9;
+            border: 3px solid #ffcc00;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            box-shadow: 0 0 25px rgba(14, 165, 233, 0.4);
         }
-        .verified-badge {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            background: #0ea5e9;
-            color: white;
-            border-radius: 50%;
-            width: 28px;
-            height: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            border: 2px solid #0f172a;
-        }
+
         h1 {
-            font-size: 24px;
+            font-size: 22px;
+            color: #ffcc00;
             font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .sub-heading {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 600;
             margin-bottom: 8px;
             letter-spacing: 0.5px;
-            color: #ffffff;
         }
-        .subscribers {
-            background: rgba(14, 165, 233, 0.15);
-            color: #38bdf8;
-            display: inline-block;
-            padding: 6px 16px;
-            border-radius: 20px;
+
+        .description {
             font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 22px;
-            border: 1px solid rgba(56, 189, 248, 0.3);
-        }
-        .features-box {
-            text-align: left;
-            background: rgba(15, 23, 42, 0.5);
-            padding: 18px;
-            border-radius: 14px;
+            color: #a0aec0;
             margin-bottom: 25px;
-            border-left: 4px solid #0ea5e9;
         }
-        .features-box h3 {
-            font-size: 15px;
-            color: #38bdf8;
-            margin-bottom: 10px;
-        }
-        .features-box ul {
-            list-style: none;
-        }
-        .features-box ul li {
-            font-size: 13.5px;
-            color: #cbd5e1;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-        .features-box ul li::before {
-            content: "✓";
-            color: #22c55e;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-        .btn-join {
+
+        .btn {
             display: block;
             width: 100%;
-            background: linear-gradient(135deg, #0284c7, #0369a1);
-            color: white;
+            background-color: #00c853;
+            color: #000000;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px;
+            border-radius: 10px;
             text-decoration: none;
-            padding: 15px;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.4);
-            letter-spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 200, 83, 0.4);
+            transition: background 0.3s ease;
         }
-        .btn-join:hover {
-            background: linear-gradient(135deg, #0369a1, #075985);
-            transform: translateY(-2px);
-            box-shadow: 0 12px 25px rgba(2, 132, 199, 0.6);
+
+        .btn:hover {
+            background-color: #00e676;
         }
-        .disclaimer {
+
+        .badge-box {
+            background-color: #0b132b;
+            border: 1px solid #3a506b;
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 13px;
+            color: #ffffff;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .features-list {
+            text-align: left;
+            margin-bottom: 25px;
+            padding-left: 10px;
+        }
+
+        .features-list p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .closing-soon {
+            font-size: 13px;
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .meta-info {
+            font-size: 12px;
+            color: #a0aec0;
+            margin-bottom: 15px;
+        }
+
+        .footer {
             font-size: 11px;
-            color: #64748b;
-            margin-top: 20px;
-            line-height: 1.5;
+            color: #718096;
+            border-top: 1px solid #2d3748;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+
+        .footer span {
+            color: #4fd1c5;
+            font-weight: 600;
         }
     </style>
 </head>
-  <!-- Meta Pixel Code -->
+      <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -150,39 +157,50 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1975384069793908&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code --> 
+    <!-- End Meta Pixel Code -->
 <body>
 
     <div class="container">
-        <!-- Logo with Verified Badge -->
-        <div class="profile-container">
-            <img src="https://i.ibb.co/5hb20cT0/Screenshot-20260922-231733.jpg" alt="Deepak Wadhwa Official Logo" class="profile-img">
-            <div class="verified-badge">✓</div>
-        </div>
-        
-        <h1>DEEPAK WADHWA OFFICIAL™</h1>
-       
-        
-        <!-- Professional & Clean Value Proposition -->
-        <div class="features-box">
-            <h3>What You Get Inside:</h3>
-            <ul>
-                <li>High-Accuracy Crypto & Forex Analysis</li>
-                <li>Stock Market Educational Setups & Learning</li>
-                <li>Real-time Market Updates & Strategy Support</li>
-                <li>100% Free Community for Learning Purposes</li>
-            </ul>
+        <!-- Profile Image -->
+        <div class="profile-img-container">
+            <img src="https://i.ibb.co/qYy2K9yk/Screenshot-20260925-004053.jpg" alt="Profile">
         </div>
 
-        <!-- Call to Action Button -->
-        <a href="https://t.me/+IUVI3PWuJmY1MTA5" target="_blank" class="btn-join">
-            🚀 JOIN TELEGRAM CHANNEL
-        </a>
+        <!-- Name & Categories -->
+        <h1>CA NITIN MURAR</h1>
+        <div class="sub-heading">NIFTY • BANKNIFTY • OPTIONS</div>
+        <p class="description">Daily Intraday Trading Signals & Analysis</p>
 
-        <p class="disclaimer">
-            <strong>Disclaimer:</strong> All market updates and calls shared here are strictly for educational and learning purposes. We are not SEBI registered. Please trade at your own risk.
-        </p>
+        <!-- CTA Button 1 -->
+        <a href="https://ibb.co/qYy2K9yk" class="btn" target="_blank">JOIN NOW FOR FREE TELEGRAM</a>
+
+        <!-- Highlight Box -->
+        <div class="badge-box">
+            ✔ Trusted by 5,000+ Traders<br>
+            ✔ Daily Consistent Setups
+        </div>
+
+        <!-- Feature List -->
+        <div class="features-list">
+            <p>✔ 5–7 High Probability Trades</p>
+            <p>✔ Exact Entry, SL & Target</p>
+            <p>✔ Beginner Friendly Guidance</p>
+            <p>✔ Live Market Updates</p>
+        </div>
+
+        <!-- CTA Button 2 -->
+        <a href="https://ibb.co/qYy2K9yk" class="btn" target="_blank">JOIN NOW FOR FREE TELEGRAM</a>
+
+        <!-- Closing & Risk Info -->
+        <div class="closing-soon">⏳ Free Access Closing Soon</div>
+        <div class="meta-info">📈 Limited Seats • Active Community</div>
+        <div class="meta-info">⚠️ Market investments are subject to risk</div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Powered by <span>@Adswithmetas</span>
+        </div>
     </div>
 
 </body>
-</html>
+</html><!-- End Meta Pixel Code --> 
